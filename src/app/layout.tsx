@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Aqsa Rasheed | Software Developer Portfolio",
 
   description:
-    "Explore my portfolio featuring AI applications, backend engineering, automation projects, certifications, and modern web development.",
+    "Explore my portfolio featuring AI applications, backend engineering, projects, certifications, and modern web development.",
 
   openGraph: {
     title: "Aqsa Rasheed | Software Developer Portfolio",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Aqsa Rasheed Portfolio",
     images: [
       {
-        url: "/images/portfolio-preview.png",
+        url: "/images/portfolio-preview2.png",
         width: 1200,
         height: 630,
         alt: "Aqsa Rasheed Portfolio",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Aqsa Rasheed | Software Developer Portfolio",
     description:
       "Software Developer specializing in Backend Development, React, Next.js, Python, and Typescript.",
-    images: ["/images/portfolio-preview.png"],
+    images: ["/images/portfolio-preview2.png"],
   },
 };
 
