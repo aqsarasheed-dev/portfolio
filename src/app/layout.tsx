@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: "Aqsa Rasheed | Software Developer Portfolio",
 
   description:
-    "Explore my portfolio featuring AI applications, backend engineering, projects, certifications, and modern web development.",
+    "Explore my AI applications, backend engineering, automation projects, certifications, and modern web development.",
 
   openGraph: {
     title: "Aqsa Rasheed | Software Developer Portfolio",
     description:
-      "Explore my portfolio featuring AI applications, backend engineering, automation projects, certifications, and modern web development.",
+      "Explore my AI applications, backend engineering, automation projects, certifications, and modern web development.",
     url: "https://portfolio-aqsarasheed.vercel.app",
     siteName: "Aqsa Rasheed Portfolio",
     images: [
