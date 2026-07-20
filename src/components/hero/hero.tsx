@@ -42,7 +42,7 @@ export default function Hero() {
 
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href="/resume/Aqsarasheed-IT.pdf"
+              href="/resume/AR-IT.pdf"
               download
               className="flex items-center gap-2 rounded-full bg-[#233B6E] px-7 py-3 text-white transition duration-300 hover:bg-[#1c3059]"
             >
@@ -51,7 +51,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="www.linkedin.com/in/aqsa-rasheed-it"
+              href="https://www.linkedin.com/in/aqsa-rasheed-it/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-full border border-[#233B6E] px-7 py-3 text-[#233B6E] transition duration-300 hover:bg-[#233B6E] hover:text-white"
@@ -77,12 +77,12 @@ export default function Hero() {
 
           <div className="absolute h-[540px] w-[540px] rounded-full bg-gradient-to-br from-[#dce8fb] via-[#eef3fb] to-[#F8F7F4]" />
 
-          <div className="absolute h-[490px] w-[490px] rounded-full border border-gray-300 opacity-30" />
+          <div className="absolute h-[540px] w-[490px] rounded-full border border-gray-300 opacity-30" />
 
           {/* Profile */}
 
           <Image
-            src="/images/profile/profile.png"
+            src="/images/profile/profile2.png"
             alt="Aqsa Rasheed"
             width={560}
             height={760}

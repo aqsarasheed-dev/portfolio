@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section className="bg-[#F8F7F4] py-32">
+    <section className="bg-[#F8F7F4] py-24">
 
       <div className="mx-auto max-w-[1400px] px-8">
 
@@ -45,7 +45,7 @@ export default function About() {
   <div className="relative overflow-hidden rounded-2xl">
 
     <Image
-      src="/images/profile/profile.png"
+      src="/images/profile/profile2.png"
       alt="Aqsa Rasheed"
       width={420}
       height={520}
