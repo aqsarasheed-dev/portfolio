@@ -7,7 +7,7 @@ import { FaLinkedin, FaDownload } from "react-icons/fa";
 export default function Hero() {
   return (
     <section className="bg-[#F8F7F4] pt-8 sm:pt-12 lg:pt-20">
-      <div className="mx-auto flex min-h-[88vh] max-w-[1550px] flex-col items-center justify-center gap-8 px-6 sm:gap-10 lg:flex-row lg:items-center lg:justify-between lg:gap-16 lg:px-24">
+      <div className="mx-auto flex max-w-[1550px] flex-col items-center justify-center gap-10 px-6 py-10 sm:gap-10 sm:py-14 lg:min-h-[88vh] lg:flex-row lg:items-center lg:justify-between lg:gap-16 lg:px-24 lg:py-0">
 
         {/* LEFT */}
 
@@ -15,7 +15,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: -70 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="flex-1 text-center lg:text-left"
+          className="w-full text-center lg:flex-1 lg:text-left"
         >
           <h1 className="font-transcity text-[3.3rem] leading-[0.95] sm:text-[4.8rem] md:text-[6.5rem] lg:text-[8rem] xl:text-[9rem]">
             AQSA
@@ -74,7 +74,7 @@ export default function Hero() {
             duration: 1.1,
             delay: 0.3,
           }}
-          className="relative flex flex-1 items-center justify-center pt-2 lg:pt-0"
+          className="relative flex w-full items-center justify-center lg:flex-1 lg:pt-0"
         >
 
           {/* Background Circle */}
