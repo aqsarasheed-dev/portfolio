@@ -256,26 +256,26 @@ export default function SocialCards({ cards }: SocialCardsProps) {
   );
 
   return (
-    <section className="flex flex-col items-center w-full py-4 lg:py-8 px-4 md:px-8 relative z-20">
+    <section className="flex flex-col items-center w-full py-4 lg:py-8 px-2 md:px-8 relative z-20">
       <div className="flex items-center justify-center w-full max-w-[90rem]">
         <div ref={containerRef} className="fan-layout flex relative justify-center items-center w-full max-w-[80rem]">
           {cards.map((card, index) => {
-            // Card content: gradient background + info overlay (no image)
+            // Card content: responsive dimensions
             const cardContent = (
-              <div className="relative w-[280px] h-[400px] overflow-hidden bg-gradient-to-br from-[#233B6E] to-[#1a2d4e] rounded-lg shadow-lg flex-shrink-0">
+              <div className="relative w-[180px] h-[260px] sm:w-[220px] sm:h-[320px] md:w-[260px] md:h-[370px] lg:w-[280px] lg:h-[400px] overflow-hidden bg-gradient-to-br from-[#233B6E] to-[#1a2d4e] rounded-lg shadow-lg flex-shrink-0">
                 {/* Overlay with text */}
-                <div className="absolute inset-0 z-20 flex flex-col justify-end p-4 text-white">
+                <div className="absolute inset-0 z-20 flex flex-col justify-end p-3 md:p-4 text-white">
                   {card.issuer && (
-                    <p className="text-xs uppercase tracking-wider text-white/80">{card.issuer}</p>
+                    <p className="text-[10px] sm:text-xs uppercase tracking-wider text-white/80">{card.issuer}</p>
                   )}
                   {card.title && (
-                    <h3 className="mt-1 text-lg font-bold leading-tight">{card.title}</h3>
+                    <h3 className="mt-1 text-sm sm:text-base md:text-lg font-bold leading-tight">{card.title}</h3>
                   )}
                   {card.description && (
-                    <p className="mt-1 text-sm text-white/80 line-clamp-2">{card.description}</p>
+                    <p className="mt-1 text-[10px] sm:text-xs md:text-sm text-white/80 line-clamp-2">{card.description}</p>
                   )}
                   {card.linkUrl && (
-                    <span className="mt-3 inline-block self-start rounded-full bg-white/20 px-4 py-1 text-xs font-semibold backdrop-blur-sm pointer-events-none">
+                    <span className="mt-2 sm:mt-3 inline-block self-start rounded-full bg-white/20 px-2 sm:px-3 py-0.5 sm:py-1 text-[8px] sm:text-[10px] md:text-xs font-semibold backdrop-blur-sm pointer-events-none">
                       View Certificate →
                     </span>
                   )}
@@ -283,7 +283,7 @@ export default function SocialCards({ cards }: SocialCardsProps) {
               </div>
             );
 
-            // Wrap with link if linkUrl exists (full card clickable)
+            // Wrap with link if linkUrl exists
             return card.linkUrl ? (
               <a
                 key={index}
@@ -304,16 +304,16 @@ export default function SocialCards({ cards }: SocialCardsProps) {
       </div>
 
       {needsPagination && (
-        <div className="flex items-center justify-center gap-4 mt-4 md:mt-6 z-30">
-          <button className={`${ARROW_CLASSES} w-10 h-10 md:w-12 md:h-12`} onClick={() => cycle("left")} aria-label="Previous">
+        <div className="flex items-center justify-center gap-3 md:gap-4 mt-3 md:mt-6 z-30">
+          <button className={`${ARROW_CLASSES} w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12`} onClick={() => cycle("left")} aria-label="Previous">
             {chevron("left")}
           </button>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5 md:gap-2">
             {cards.map((_, i) => (
-              <span key={i} className={`w-2 h-2 rounded-full transition-all duration-300 ${i === centerIndex ? "bg-black/70 dark:bg-white/80 scale-[1.3]" : "bg-black/15 dark:bg-white/15"}`} />
+              <span key={i} className={`w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-all duration-300 ${i === centerIndex ? "bg-black/70 dark:bg-white/80 scale-[1.3]" : "bg-black/15 dark:bg-white/15"}`} />
             ))}
           </div>
-          <button className={`${ARROW_CLASSES} w-10 h-10 md:w-12 md:h-12`} onClick={() => cycle("right")} aria-label="Next">
+          <button className={`${ARROW_CLASSES} w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12`} onClick={() => cycle("right")} aria-label="Next">
             {chevron("right")}
           </button>
         </div>

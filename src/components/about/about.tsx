@@ -31,7 +31,7 @@ export default function About() {
         {/* Content */}
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
 
-          {/* Image – hidden on mobile, visible on desktop */}
+          {/* Image – visible only on desktop (hidden on mobile) */}
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -53,24 +53,13 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Story */}
+          {/* Story – no mobile image now */}
           <motion.div
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           >
-            {/* Image – visible on mobile only */}
-            <div className="mb-8 flex justify-center lg:hidden">
-              <Image
-                src="/images/profile/profile2.png"
-                alt="Aqsa Rasheed"
-                width={280}
-                height={360}
-                className="h-auto w-[200px] object-contain drop-shadow-lg sm:w-[280px]"
-              />
-            </div>
-
             <h3 className="font-playfair text-3xl lg:text-4xl">
               Hi, I'm Aqsa.
             </h3>
