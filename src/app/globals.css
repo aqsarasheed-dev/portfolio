@@ -10,13 +10,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* globals.css */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-playfair);
-  overflow-x: hidden;
+  /* remove overflow-x: hidden from here */
 }
-
 .font-transcity {
   font-family: var(--font-transcity);
 }
