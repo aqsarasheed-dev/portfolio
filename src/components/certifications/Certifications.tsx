@@ -1,10 +1,8 @@
 // src/components/certifications/Certifications.tsx
-
 "use client";
 
-import SocialCards from "@/components/ui/card-fan-carousel";
-// ✅ Correct
-import { certificateCards } from "@/data/certificateCards";// ✅ Import mapped data
+import CertificateStack from "@/components/ui/certificate-stack";
+import { certificateCards } from "@/data/certificateCards";
 
 export default function Certifications() {
   return (
@@ -23,13 +21,12 @@ export default function Certifications() {
           </p>
         </div>
 
-        {/* Fan Carousel */}
-        <div className="relative w-full overflow-visible py-4 min-h-[400px]">
-          <SocialCards cards={certificateCards} />
+        <div className="relative w-full overflow-visible py-4">
+          <CertificateStack cards={certificateCards} />
         </div>
 
         <p className="mt-8 text-center text-sm text-gray-500 font-playfair">
-          Hover over cards to fan them out • Click to view full certificate
+          Click "Next Certificate" to browse • Click "View" to open the certificate
         </p>
       </div>
     </section>

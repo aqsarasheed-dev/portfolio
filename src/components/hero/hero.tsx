@@ -90,6 +90,7 @@ export default function Hero() {
             alt="Aqsa Rasheed"
             width={560}
             height={760}
+            loading="eager" 
             priority
             sizes="(max-width:640px) 240px,
                    (max-width:768px) 300px,
