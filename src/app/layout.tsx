@@ -48,7 +48,6 @@ export default function RootLayout({
       lang="en"
       className={`${transcity.variable} ${playfair.variable}`}
     >
-      // layout.tsx
 <body>
   <div style={{ overflowX: 'hidden' }}>
     {children}

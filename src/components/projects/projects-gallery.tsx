@@ -18,7 +18,7 @@ const ProjectsGallery = () => {
   }));
 
   return (
-    <div className="w-full bg-[#F8F7F4]" style={{ height: '500vh' }}>
+    <div className="w-full bg-[#F8F7F4]" style={{ height: '120vh' }}>
       {/* Sticky container – flex column, centered content */}
       <div className="sticky top-0 flex h-screen w-full flex-col items-center justify-between overflow-hidden bg-[#F8F7F4] px-4 py-8">
         
