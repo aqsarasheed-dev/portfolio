@@ -41,7 +41,7 @@ export default function Hero() {
           {/* Buttons */}
           <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
             <a
-              href="/resume/AR-IT.pdf"
+              href="/resume/ARP.pdf"
               download
               className="flex items-center gap-2 rounded-full bg-[#233B6E] px-6 py-3 text-sm text-white transition duration-300 hover:bg-[#1d315c] sm:px-7 sm:text-base"
             >
