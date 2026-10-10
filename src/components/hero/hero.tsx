@@ -29,19 +29,19 @@ export default function Hero() {
           </p>
 
           <p className="font-playfair mt-2 text-sm uppercase tracking-[0.25em] text-gray-500 sm:text-base lg:text-lg">
-            React.js • Next.js • Node.js • Python • AI
+            Agentic AI • Backend Engineering • React.js • Python
           </p>
 
           <p className="font-playfair mx-auto mt-6 max-w-[560px] text-base leading-8 text-gray-700 sm:mt-8 sm:text-lg sm:leading-9 lg:mx-0 lg:text-xl lg:leading-10">
             A self-learner passionate about building intelligent software and
-            modern web applications. Currently exploring Artificial Intelligence
-            while working as a Backend AI Intern at FlyRank AI.
+            modern web applications. Completed Backend AI Internship at FlyRank AI,
+            now pursuing Agentic AI Engineering from Ideoversity, Arfa Tower Lahore.
           </p>
 
           {/* Buttons */}
           <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
             <a
-              href="/resume/ARP.pdf"
+              href="/resume/AR-IT.pdf"
               download
               className="flex items-center gap-2 rounded-full bg-[#233B6E] px-6 py-3 text-sm text-white transition duration-300 hover:bg-[#1d315c] sm:px-7 sm:text-base"
             >
@@ -84,18 +84,15 @@ export default function Hero() {
           {/* Border Circle */}
           <div className="absolute h-[240px] w-[240px] rounded-full border border-gray-300 opacity-30 sm:h-[320px] sm:w-[320px] md:h-[400px] md:w-[400px] lg:h-[490px] lg:w-[490px]" />
 
-          {/* Profile Image */}
+          {/* Profile Image – sizes on ONE LINE */}
           <Image
             src="/images/profile/profile2.png"
             alt="Aqsa Rasheed"
             width={560}
             height={760}
-            loading="eager" 
             priority
-            sizes="(max-width:640px) 240px,
-                   (max-width:768px) 300px,
-                   (max-width:1024px) 380px,
-                   560px"
+            loading="eager"
+            sizes="(max-width:640px) 240px, (max-width:768px) 300px, (max-width:1024px) 380px, 560px"
             className="relative z-20 h-auto w-[240px] object-contain object-bottom drop-shadow-2xl sm:w-[300px] md:w-[380px] lg:w-[500px] xl:w-[560px]"
           />
         </motion.div>

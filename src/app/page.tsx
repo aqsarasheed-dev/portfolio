@@ -6,7 +6,7 @@ import ProjectsGallery from "@/components/projects/projects-gallery";
 import Projects from "@/components/projects/Projects";
 import Certifications from "@/components/certifications/Certifications";
 import Footer from "@/components/footer/footer";
-
+import Experience from "@/components/experience/experience"
 export default function Home() {
   return (
     <main>
@@ -15,6 +15,7 @@ export default function Home() {
 
       {/* About Section - Your Story */}
       <About />
+      <Experience />
 
       {/* NEW: Circular Gallery - Interactive 3D Project Showcase */}
       {/* Eye-catching, modern way to display your best projects */}

@@ -19,10 +19,10 @@ const ProjectsGallery = () => {
 
   return (
     <div className="w-full bg-[#F8F7F4]" style={{ height: '120vh' }}>
-      {/* Sticky container – flex column, centered content */}
+      {/* Sticky container */}
       <div className="sticky top-0 flex h-screen w-full flex-col items-center justify-between overflow-hidden bg-[#F8F7F4] px-4 py-8">
-        
-        {/* Header – at top, centered */}
+
+        {/* Header */}
         <div className="flex w-full flex-col items-center text-center">
           <p className="font-playfair text-sm uppercase tracking-[0.4em] text-[#233B6E]">
             Portfolio
@@ -31,16 +31,16 @@ const ProjectsGallery = () => {
             Featured Projects
           </h1>
           <p className="mt-2 max-w-2xl text-lg text-gray-600">
-            A selection of projects showcasing my working in AI, backend engineering, automation, and modern web development.
+            A selection of projects showcasing my work in AI, backend engineering, automation, and modern web development.
           </p>
         </div>
 
-        {/* Gallery – takes remaining space, centers vertically */}
-        <div className="flex-1 w-full min-h-0 relative z-10">
+        {/* Gallery – FIXED height, no more scaling */}
+        <div className="relative z-10 h-[380px] w-full sm:h-[440px] lg:h-[520px]">
           <CircularGallery items={galleryItems} />
         </div>
 
-        {/* Bottom section – info + button */}
+        {/* Bottom section */}
         <div className="flex w-full flex-col items-center gap-3 pt-4">
           <p className="text-center text-sm text-gray-500">
             Scroll to rotate the gallery • Click cards to view more details

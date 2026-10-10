@@ -65,16 +65,18 @@ export default function About() {
             </h3>
 
             <p className="font-playfair mt-6 text-base leading-8 text-gray-700 sm:text-lg sm:leading-9 lg:mt-8 lg:text-xl lg:leading-10">
-              I'm a Software Developer passionate about building scalable web
-              applications and exploring Artificial Intelligence. My journey
-              has been driven by curiosity, continuous learning, and solving
-              real-world problems through technology.
+              I'm an AI-focused  passionate about building  systems
+that solve real problems. My journey has been driven by curiosity, a love
+for continuous learning, and the belief that AI can make everyday life
+simpler and smarter.
             </p>
 
             <p className="font-playfair mt-6 text-base leading-8 text-gray-700 sm:text-lg sm:leading-9 lg:mt-8 lg:text-xl lg:leading-10">
-              Currently working as a Backend AI Intern at FlyRank AI, I enjoy
-              creating modern applications using Next.js, Supabase,
-              PostgreSQL, JavaScript, Python, and AI technologies.
+              Right now, I'm pursuing Agentic AI Engineering at Ideoversity, Arfa Tower Lahore, 
+after completing a Backend AI Internship at FlyRank AI. My focus has shifted from 
+traditional web apps to building autonomous AI agents systems that can reason, 
+plan, and take action. I work with Python, LLM, LangChain, LangGraph, RAG and modern AI stacks 
+to bring these ideas to life.
             </p>
 
             {/* Education & Current Role */}
@@ -93,21 +95,27 @@ export default function About() {
                   Current Role
                 </span>
                 <p className="font-playfair mt-1 text-gray-600">
-                  Backend AI Intern • FlyRank AI
+                  Agentic AI Engineering • Ideoversity, Arfa Tower Lahore
                 </p>
               </div>
+                <div>
+    <span className="font-playfair font-semibold text-[#1A1A1A]">Past Role</span>
+    <p className="font-playfair mt-1 text-gray-600">
+      Backend AI Intern • FlyRank AI (Completed)
+    </p>
+  </div>
             </div>
 
             {/* Interests – pill style with icons */}
             <div className="mt-8 flex flex-wrap gap-3">
               <span className="rounded-full bg-[#233B6E]/10 px-4 py-2 text-sm font-medium text-[#233B6E]">
-                🤖 Artificial Intelligence
+                🤖 Agentic AI & LLMs
               </span>
               <span className="rounded-full bg-[#233B6E]/10 px-4 py-2 text-sm font-medium text-[#233B6E]">
-                ⚙️ Backend Engineering
+                🌱 Growing Every Day
               </span>
               <span className="rounded-full bg-[#233B6E]/10 px-4 py-2 text-sm font-medium text-[#233B6E]">
-                🌐 Full Stack Development
+                🛠️ Building Side Projects
               </span>
             </div>
 
